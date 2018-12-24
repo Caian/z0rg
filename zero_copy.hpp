@@ -59,7 +59,9 @@ public:
      * object.
      */
     template <typename IT>
-    inline T& get(IT it)
+    inline T& get(
+        IT it
+    )
     {
         (void)it;
 
@@ -74,7 +76,9 @@ public:
      * @param it The iterator being set.
      */
     template <typename IT>
-    inline void set(IT it) const
+    inline void set(
+        IT it
+    ) const
     {
         *it = _t;
     }
@@ -105,7 +109,9 @@ public:
      * @return T& A reference to the object pointed by the iterator.
      */
     template <typename IT>
-    inline T& get(IT it) const
+    inline T& get(
+        IT it
+    ) const
     {
         return *it;
     }
@@ -119,7 +125,9 @@ public:
      * @param it The iterator being set.
      */
     template <typename IT>
-    inline void set(IT it) const
+    inline void set(
+        IT it
+    ) const
     {
         (void)it;
     }
@@ -162,7 +170,9 @@ public:
      * iterator (if it allows), or to an internal state of the zero_copy
      * object.
      */
-    inline T& get(IT it)
+    inline T& get(
+        IT it
+    )
     {
         return _impl.get(it);
     }
@@ -174,7 +184,9 @@ public:
      *
      * @param it The iterator being set.
      */
-    inline void set(IT it)
+    inline void set(
+        IT it
+    )
     {
         _impl.set(it);
     }
