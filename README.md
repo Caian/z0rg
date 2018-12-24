@@ -1,6 +1,11 @@
 # z0rg
 Helper class to enable zero copy when working with iterators that directly reference it's data
 
+### Test results
+@               | Build         | Tests coverage
+----------------|-------------- | --------------
+Master branch:  | [![Build Status](https://travis-ci.org/Caian/z0rg.svg?branch=master)](https://travis-ci.org/Caian/z0rg) | [![codecov.io](https://codecov.io/github/Caian/z0rg/coverage.svg?branch=master)](https://codecov.io/github/Caian/z0rg)
+
 ## Introduction
 
 When dealing with iterators, it is a common practice to express loops in the following way:
